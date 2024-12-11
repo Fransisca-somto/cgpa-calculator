@@ -2,7 +2,7 @@
   "name": "cgpa-calculator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Fransisca-somto/cgpa-calculator.git",
+  "homepage": "https://Fransisca-somto.github.io/cgpa-calculator",
   "dependencies": {
     "cra-template": "1.2.0",
     "html2canvas": "^1.4.1",
