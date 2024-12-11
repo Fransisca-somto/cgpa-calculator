@@ -1,0 +1,131 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100vw;
+}
+
+h1 {
+  width: 100%;
+}
+
+body > div {
+  width: 100%;
+  display: grid;
+  background-color: rgba(238, 238, 238, 0.582);
+  height: 100vh;
+}
+
+
+.tables {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+}
+
+table {
+  border-spacing: 0;
+}
+
+table * {
+  border: 1px solid rgb(1, 134, 175);
+}
+
+thead {
+  background-color: rgb(1, 134, 175);
+  color: rgb(255, 255, 255);
+  font-size: 0.9em;
+}
+
+thead th {
+  padding: 0.5em;
+  text-align: center;
+}
+
+td, tr {
+  width: 15em;
+  padding: 0.2em;
+}
+
+input, select {
+  border: none;
+  width: 100%;
+  padding: 0.1em;
+  background-color: transparent;
+  height: 2.5em;
+  outline: 0;
+  text-align: center;
+}
+
+h1 {
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  padding: 0.3em 0;
+}
+
+.buttons {
+  margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  width: 30em;
+  justify-content: center;
+  gap: 1em;
+}
+
+button {
+  padding: 0.5em 1.5em;
+  border: 0;
+  border-radius: 1em;
+  font-weight: 600;
+  color: white;
+  opacity: 0.75;
+  cursor: pointer;
+  transition: opacity 0.2s ease 0.1s;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.plus-course {
+  background-color: green;
+}
+
+.plus-semester{
+  background-color: blue;
+}
+
+.calculate-cgpa {
+  background-color: red;
+}
+
+.download-img {
+  background-color: purple;
+}
+
+.download-pdf {
+ background-color: rgb(0, 114, 104);
+}
+
+@media screen and (max-width: 780px) {
+  td, tr {
+    width: auto;
+    padding: 0.2em;
+  }
+  .tables {
+    display: grid;
+    margin-top: 0.5em;
+  }
+
+  .buttons {
+    width: 15em;
+    margin: 2em auto;
+  }
+}
