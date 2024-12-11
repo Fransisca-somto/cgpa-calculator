@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/cgpa-calculator/static/css/main.f0b88ee6.css",
+    "main.js": "/cgpa-calculator/static/js/main.b5e1c9f7.js",
+    "static/js/239.0996858c.chunk.js": "/cgpa-calculator/static/js/239.0996858c.chunk.js",
+    "static/js/213.239c0258.chunk.js": "/cgpa-calculator/static/js/213.239c0258.chunk.js",
+    "static/js/732.5f0ca27c.chunk.js": "/cgpa-calculator/static/js/732.5f0ca27c.chunk.js",
+    "index.html": "/cgpa-calculator/index.html",
+    "main.f0b88ee6.css.map": "/cgpa-calculator/static/css/main.f0b88ee6.css.map",
+    "main.b5e1c9f7.js.map": "/cgpa-calculator/static/js/main.b5e1c9f7.js.map",
+    "239.0996858c.chunk.js.map": "/cgpa-calculator/static/js/239.0996858c.chunk.js.map",
+    "213.239c0258.chunk.js.map": "/cgpa-calculator/static/js/213.239c0258.chunk.js.map",
+    "732.5f0ca27c.chunk.js.map": "/cgpa-calculator/static/js/732.5f0ca27c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0b88ee6.css",
+    "static/js/main.b5e1c9f7.js"
+  ]
+}
