@@ -20,8 +20,6 @@ function App() {
     setCourses(updatedCourses);
   };
 
-  const table2Image = () => {};
-
   const exportTableToPDF = () => {
     window.open(
       "https://www.profitablecpmrate.com/m8vfhpjkiy?key=db85e62f42b7f9536fefe711ae987529",
@@ -31,9 +29,11 @@ function App() {
     const element = document.getElementById("table");
 
     doc.html(element, {
-      callback: function (doc) {
+      callback: (doc) => {
+        doc.saveGraphicsState();
         doc.save("mycgpa.pdf");
       },
+      margin: 0,
       x: 1,
       y: 1,
       html2canvas: { scale: 0.287 },
@@ -50,6 +50,9 @@ function App() {
     Html2Img.save(el, {
       name: "mycgpa",
       type: "jpg",
+      quality: 1, // Set quality to maximum (1 = 100%)
+      scale: 3000, // Increase scale to improve resolution (default might be 1)
+      useCORS: true, // Ensure cross-origin resources are included
     });
   };
 
@@ -116,7 +119,7 @@ function App() {
   return (
     <div>
       <h1>CGPA CALCULATOR</h1>
-      <div className="tables">
+      <div className="tables" id="tables">
         <table id="table">
           <thead>
             <tr>

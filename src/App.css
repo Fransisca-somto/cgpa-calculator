@@ -2,39 +2,35 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-print-color-adjust: exact; /* Ensures proper color rendering */
+  print-color-adjust: exact;
 }
 
 body {
   font-family: sans-serif;
   width: 100vw;
+  color: black;
 }
 
 h1 {
   width: 100%;
 }
 
-body > div {
-  width: 100%;
-  display: grid;
-  background-color: rgba(238, 238, 238, 0.582);
-  height: 100vh;
-}
-
-
 .tables {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
   margin-top: 0.5em;
 }
 
 table {
   border-spacing: 0;
+  border-collapse: collapse;
 }
 
-table * {
-  border: 1px solid rgb(1, 134, 175);
+table * {   
+  border: 0.5px solid rgb(1, 134, 175);
 }
 
 thead {
@@ -43,14 +39,20 @@ thead {
   font-size: 0.9em;
 }
 
+tbody {
+  background-color: white;
+}
+
 thead th {
   padding: 0.5em;
   text-align: center;
+  white-space: collapse;
 }
 
 td, tr {
   width: 15em;
   padding: 0.2em;
+  white-space: collapse;
 }
 
 input, select {
@@ -115,7 +117,7 @@ button:hover {
 }
 
 @media screen and (max-width: 780px) {
-  td, tr {
+  /* td, tr {
     width: auto;
     padding: 0.2em;
   }
@@ -127,5 +129,5 @@ button:hover {
   .buttons {
     width: 15em;
     margin: 2em auto;
-  }
+  } */
 }
