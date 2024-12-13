@@ -117,17 +117,18 @@ button:hover {
 }
 
 @media screen and (max-width: 780px) {
-  /* td, tr {
+  td, tr {
     width: auto;
     padding: 0.2em;
   }
+
   .tables {
     display: grid;
-    margin-top: 0.5em;
+    margin: 0.5em;
   }
 
   .buttons {
     width: 15em;
     margin: 2em auto;
-  } */
+  }
 }

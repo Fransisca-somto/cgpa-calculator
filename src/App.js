@@ -20,6 +20,7 @@ function App() {
     setCourses(updatedCourses);
   };
 
+  
   const exportTableToPDF = () => {
     window.open(
       "https://www.profitablecpmrate.com/m8vfhpjkiy?key=db85e62f42b7f9536fefe711ae987529",
@@ -27,17 +28,35 @@ function App() {
     );
     const doc = new jsPDF();
     const element = document.getElementById("table");
-
-    doc.html(element, {
-      callback: (doc) => {
-        doc.saveGraphicsState();
-        doc.save("mycgpa.pdf");
-      },
-      margin: 0,
-      x: 1,
-      y: 1,
-      html2canvas: { scale: 0.287 },
-    });
+    
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+  
+    if (mediaQuery.matches) {
+      doc.html(element, {
+        callback: (doc) => {
+          doc.saveGraphicsState();
+          doc.save("mycgpa.pdf");
+        },
+        margin: 0,
+        x: 1,
+        y: 1,
+        html2canvas: { scale: 0.49 },
+      });
+      
+    } else {
+      doc.html(element, {
+        callback: (doc) => {
+          doc.saveGraphicsState();
+          doc.save("mycgpa.pdf");
+        },
+        margin: 0,
+        x: 1,
+        y: 1,
+        html2canvas: { scale: 0.287 },
+      });
+      
+    }
+    
   };
 
   const saveAsImg = () => {
